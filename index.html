@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Santiuguie’s · Cortes a la parrilla y postres</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="imagenes/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div><canvas id="fx" aria-hidden="true"></canvas>
+<header><nav>
+<a class="logo" href="#inicio"><img src="imagenes/logo.png" alt="" width="48" height="48"><span>Santiuguie’s</span></a>
+<ul id="menu-list">
+<li><a href="#inicio">Inicio</a></li><li><a href="#menu">Menú</a></li><li><a href="#lugar">El lugar</a></li>
+<li><a href="#resenas">Reseñas</a></li><li><a href="#ubicacion">Ubicación</a></li><li><a href="#reservaciones">Reservaciones</a></li><li><a href="#contacto">Contacto</a></li>
+</ul>
+<button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-list"><span></span></button>
+</nav></header>
+<main>
+<div class="page" id="inicio">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Santiuguie’s</h1>
+<p>La mejor comida es la que se hace con dedicacion y en Santiuguie's te efrecemos eso y mas.</p>
+<div class="cta"><a class="btn" href="#reservaciones">Reservar mesa</a><a class="btn ghost" href="#menu">Ver el menú</a></div>
+</div>
+<div class="car" id="car" role="region" aria-roledescription="carrusel" aria-label="Platillos destacados">
+<div class="bar" id="bar"></div>
+<div class="track" id="track">
+<div class="slide"><div class="art g1"><img src="imagenes/Ribeye.jfif" alt="Rib Eye a la parrilla"></div><div class="txt"><h3>Rib Eye</h3><p>Marmoleo intenso y sabor profundo.</p><span class="price">$220</span><div><a class="btn" href="#menu">Ver el menú</a></div></div></div>
+<div class="slide"><div class="art g3"><img src="imagenes/Arrachera.jfif" alt="Arrachera con guarnición"></div><div class="txt"><h3>Arrachera</h3><p>Corte acompañado de guarnición.</p><span class="price">$290</span><div><a class="btn" href="#menu">Ver el menú</a></div></div></div>
+<div class="slide"><div class="art g4"><img src="imagenes/FiletM.jfif" alt="Filete Mignon"></div><div class="txt"><h3>Filete Mignon</h3><p>El más tierno, con mantequilla de hierbas.</p><span class="price">$240</span><div><a class="btn" href="#menu">Ver el menú</a></div></div></div>
+<div class="slide"><div class="art g7"><img src="imagenes/volcan.jpg" alt="Volcán de chocolate con frutos rojos"></div><div class="txt"><h3>Volcán de chocolate</h3><p>Centro fundido con helado de vainilla.</p><span class="price">$120</span><div><a class="btn" href="#menu">Ver el menú</a></div></div></div>
+<div class="slide"><div class="art g6"><img src="imagenes/cheesecake_de_frutos_rojos_73941_1200.jpg" alt="Cheesecake de frutos rojos"></div><div class="txt"><h3>Cheesecake de frutos rojos</h3><p>Base de galleta y coulis de zarzamora.</p><span class="price">$110</span><div><a class="btn" href="#menu">Ver el menú</a></div></div></div>
+<div class="slide"><div class="art g5"><img src="imagenes/flan.jpg" alt="Flan de cajeta"></div><div class="txt"><h3>Flan de cajeta</h3><p>Cremoso, con caramelo tostado.</p><span class="price">$95</span><div><a class="btn" href="#menu">Ver el menú</a></div></div></div>
+<div class="slide"><div class="art g2"><img src="imagenes/pastel de 3 leches.jpg" alt="Pastel de 3 leches con fresa"></div><div class="txt"><h3>Pastel de 3 leches</h3><p>Bizcocho suave bañado en tres leches, con crema y fresa.</p><span class="price">$95</span><div><a class="btn" href="#menu">Ver el menú</a></div></div></div>
+<div class="slide"><div class="art g8"><img src="imagenes/Helado.png" alt="Brownie con helado de vainilla"></div><div class="txt"><h3>Brownie con helado</h3><p>Brownie tibio con helado de vainilla y salsa de chocolate.</p><span class="price">$100</span><div><a class="btn" href="#menu">Ver el menú</a></div></div></div>
+</div>
+<div class="dots" id="dots"></div>
+<div class="ctl"><button id="prev" aria-label="Anterior">‹</button><button id="next" aria-label="Siguiente">›</button></div>
+</div>
+</div></div>
+<section class="home"><div class="wrap"><h2>Explora</h2><p class="sub">Todo lo que necesitas para tu visita.</p>
+<div class="grid">
+<a class="card rv" href="#menu"><div class="b"><h4>Menú</h4><p>Cortes a la parrilla y postres.</p></div></a>
+<a class="card rv" href="#lugar"><div class="b"><h4>El lugar</h4><p>Conoce nuestro espacio.</p></div></a>
+<a class="card rv" href="#resenas"><div class="b"><h4>Reseñas</h4><p>Lo que opinan los comensales.</p></div></a>
+<a class="card rv" href="#ubicacion"><div class="b"><h4>Ubicación</h4><p>Cómo llegar y horarios.</p></div></a>
+<a class="card rv" href="#reservaciones"><div class="b"><h4>Reservaciones</h4><p>Solicita tu mesa.</p></div></a>
+<a class="card rv" href="#contacto"><div class="b"><h4>Contacto</h4><p>Llámanos o escríbenos.</p></div></a>
+</div></div></section>
+</div>
+
+<section class="page" id="menu"><div class="wrap">
+<h2>Nuestro menú</h2>
+<p class="sub">Todos los cortes se sirven con la misma dedicacion de uno solo.</p>
+<h3 class="group">Cortes a la parrilla</h3>
+<div class="grid">
+<article class="card rv"><div class="ph g1"><img loading="lazy" decoding="async" src="imagenes/Ribeye.jfif" alt="Rib Eye"></div><div class="b"><h4>Rib Eye</h4><p>Un Corte con un marmoleo intenso y un sabor profundo.</p><span class="price">$220</span></div></article>
+<article class="card rv"><div class="ph g2"><img loading="lazy" decoding="async" src="imagenes/Tbone.jfif" alt="T-Bone"></div><div class="b"><h4>T-Bone</h4><p>Corte de carne en su jugo.</p><span class="price">$180</span></div></article>
+<article class="card rv"><div class="ph g3"><img loading="lazy" decoding="async" src="imagenes/Arrachera.jfif" alt="Arrachera"></div><div class="b"><h4>Arrachera</h4><p>Corte acompañado de guarnicion.</p><span class="price">$290</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/FiletM.jfif" alt="Filete Mignon"></div><div class="b"><h4>Filete Mignon</h4><p>El más tierno, con mantequilla de hierbas.</p><span class="price">$240</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/Brisket.jfif" alt="Brisket"></div><div class="b"><h4>Brisket</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$140</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/Chambarete.jfif" alt="Chambarete"></div><div class="b"><h4>Chambarete</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$210</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/chorizoAR.jfif" alt="Chorizo Argentino"></div><div class="b"><h4>Chorizo Argentino</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$179</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/Cuete.jfif" alt="Cuete"></div><div class="b"><h4>Cuete</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$179</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/images.jfif" alt="Costillar de cerdo"></div><div class="b"><h4>Costillar de cerdo</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$234</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/Newyork.jfif" alt="New York"></div><div class="b"><h4>New York</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$67</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/Peterhause.jfif" alt="Petherhause"></div><div class="b"><h4>Petherhause</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$237</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/picaña.jfif" alt="Picaña"></div><div class="b"><h4>Picaña</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$123</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/Sirloin.JPG" alt="Top Sirloin"></div><div class="b"><h4>Top Sirloin</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$321</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/Tomawaok.jfif" alt="Tomawok"></div><div class="b"><h4>Tomawok</h4><p>250 g, el más tierno, con mantequilla de hierbas.</p><span class="price">$123</span></div></article>
+</div>
+<h3 class="group">Postres</h3>
+<div class="grid">
+<article class="card rv"><div class="ph g5"><img loading="lazy" decoding="async" src="imagenes/flan.jpg" alt="Flan de cajeta"></div><div class="b"><h4>Flan de cajeta</h4><p>Cremoso, con caramelo tostado.</p><span class="price">$95</span></div></article>
+<article class="card rv"><div class="ph g6"><img loading="lazy" decoding="async" src="imagenes/cheesecake_de_frutos_rojos_73941_1200.jpg" alt="Cheesecake de frutos rojos"></div><div class="b"><h4>Cheesecake de frutos rojos</h4><p>Base de galleta y coulis de zarzamora.</p><span class="price">$110</span></div></article>
+<article class="card rv"><div class="ph g7"><img loading="lazy" decoding="async" src="imagenes/volcan.jpg" alt="Volcán de chocolate"></div><div class="b"><h4>Volcán de chocolate</h4><p>Centro fundido con helado de vainilla.</p><span class="price">$120</span></div></article>
+<article class="card rv"><div class="ph g8"><img loading="lazy" decoding="async" src="imagenes/Helado.png" alt="Brownie con helado"></div><div class="b"><h4>Brownie con helado</h4><p>Brownie tibio con helado de vainilla y salsa de chocolate.</p><span class="price">$100</span></div></article>
+<article class="card rv"><div class="ph g2"><img loading="lazy" decoding="async" src="imagenes/carlota de limon.jpg" alt="Carlota de limón"></div><div class="b"><h4>Carlota de limón</h4><p>Capas de galleta y crema fría de limón, con un toque de limón fresco.</p><span class="price">$90</span></div></article>
+<article class="card rv"><div class="ph g3"><img loading="lazy" decoding="async" src="imagenes/pastel de 3 leches.jpg" alt="Pastel de 3 leches"></div><div class="b"><h4>Pastel de 3 leches</h4><p>Bizcocho suave bañado en tres leches, con crema y fresa.</p><span class="price">$95</span></div></article>
+<article class="card rv"><div class="ph g7"><img loading="lazy" decoding="async" src="imagenes/mouse de chocolate.jpg" alt="Mousse de chocolate"></div><div class="b"><h4>Mousse de chocolate</h4><p>Mousse ligero de chocolate oscuro con crema y trozos de chocolate.</p><span class="price">$105</span></div></article>
+<article class="card rv"><div class="ph g4"><img loading="lazy" decoding="async" src="imagenes/ppastel.png" alt="Chocoflan"></div><div class="b"><h4>Chocoflan</h4><p>Pastel húmedo de chocolate con flan cremoso y caramelo.</p><span class="price">$110</span></div></article>
+</div>
+</div></section>
+
+<section class="page" id="lugar"><div class="wrap">
+<h2>El lugar</h2>
+<p class="sub">Un hambiente tranquilo y familiar con vistas hermosas.</p>
+<div class="gal">
+<div class="t g1"><img loading="lazy" decoding="async" src="imagenes/Restaurante_de_carnes_a_la_parrilla.png" alt="Comedor de Santiuguie’s"></div>
+<div class="w g2"><img loading="lazy" decoding="async" src="imagenes/restaurant.png" alt="Ambiente del restaurante"></div>
+<div class="g4"><img loading="lazy" decoding="async" src="imagenes/fondo.png" alt="Interior del restaurante"></div>
+<div class="g3"><img loading="lazy" decoding="async" src="imagenes/sonora-grill-napoles.jpg" alt="Parrilla y cortes"></div>
+<div class="f g5"><img loading="lazy" decoding="async" src="imagenes/fondos.jpg" alt="Vista del lugar"></div>
+</div>
+</div></section>
+
+<section class="page" id="resenas"><div class="wrap">
+<h2>Lo que dicen de nosotros</h2>
+<p class="sub">Reseñas de Nuestros clientes.</p>
+<div class="rev" id="revs">
+<blockquote class="rv"><span class="stars">★★★★★</span><p>La carne sabia a carne.</p><cite>Papoi123.</cite></blockquote>
+<blockquote class="rv" style="--d:.1s"><span class="stars">★★★★★</span><p>Fuimos por la carne y nos quedamos por el volcán de chocolate. Atención muy amable.</p><cite>Mariana Sanchez.</cite></blockquote>
+<blockquote class="rv" style="--d:.2s"><span class="stars">★★★☆☆</span><p>El Mesero esta bien guapo pero no me quiso pasar su numero.</p><cite>Anahi Jimenez.</cite></blockquote>
+<blockquote class="rv" style="--d:.2s"><span class="stars">★☆☆☆☆</span><p>Que asco.</p><cite>Ramses.</cite></blockquote>
+</div>
+<div class="rform">
+<h3>Escribe tu reseña</h3>
+<p class="note" style="margin-bottom:1rem">Tu reseña aparecerá aquí escribela.</p>
+<form id="rvf" novalidate>
+<label>Nombre<input name="n" required maxlength="40" autocomplete="name"></label>
+<div><div id="lbl" style="font-weight:500;font-size:.95rem">Calificación</div><div class="rate" id="rate" role="radiogroup" aria-labelledby="lbl"></div></div>
+<label>Tu opinión<textarea name="c" rows="3" maxlength="400" required placeholder="¿Qué pediste? ¿Cómo estuvo la atención?"></textarea></label>
+<p class="err" id="err" role="alert"></p>
+<button class="btn" type="submit">Publicar reseña</button>
+</form>
+</div>
+</div></section>
+
+<section class="page" id="ubicacion"><div class="wrap">
+<h2>Ubicación</h2>
+<p class="sub">Estamos esperándote.</p>
+<div class="map">
+<div class="mapbox"><div><div class="pin">📍</div><p>Mapa de Google Maps</p>
+<a class="btn" id="mapLink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Santiuguie%27s+restaurante">Abrir en Google Maps</a></div></div>
+<div class="info">
+<h3>Dirección</h3><p>Calle 16 de septiembre #306, zona Centro</p>
+<h3>Horario</h3><p>Mar a Dom: 1:00 pm – 10:00 pm<br>Lunes: cerrado</p>
+</div></div>
+</div></section>
+
+<section class="page" id="reservaciones"><div class="wrap">
+<h2>Reservaciones</h2>
+<p class="sub">Llena el formulario y confirma tu mesa por teléfono o WhatsApp desde Contacto.</p>
+<form id="rf">
+<div class="row"><label>Nombre<input name="n" required autocomplete="name"></label><label>Teléfono<input name="t" type="tel" required autocomplete="tel"></label></div>
+<div class="row"><label>Fecha<input name="f" type="date" required></label><label>Hora<input name="h" type="time" min="13:00" max="22:00" required></label></div>
+<label>Personas<select name="p"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8 o más</option></select></label>
+<label>Comentarios<textarea name="c" rows="3" placeholder="Alergias, cumpleaños, mesa en terraza…"></textarea></label>
+<button class="btn" type="submit">Solicitar reservación</button>
+</form>
+<div class="ok" id="ok" role="status"></div>
+</div></section>
+
+<section class="page" id="contacto"><div class="wrap">
+<h2>Contacto</h2>
+<p class="sub">Escríbenos o llámanos.</p>
+<div class="contact">
+<a class="card rv" href="tel:+524625395214"><div class="b"><h4>Teléfono</h4><p>+52 462 539 5214</p><span class="go">Llamar ahora</span></div></a>
+<a class="card rv" href="https://wa.me/524621020844?text=Hola%2C%20quisiera%20informaci%C3%B3n%20de%20Santiuguie%27s" target="_blank" rel="noopener noreferrer"><div class="b"><h4>WhatsApp</h4><p>+52 462 102 0844</p><span class="go">Abrir WhatsApp</span></div></a>
+<a class="card rv" href="mailto:santiuguie360@gmail.com"><div class="b"><h4>Correo</h4><p>santiuguie360@gmail.com</p><span class="go">Enviar correo</span></div></a>
+<a class="card rv" href="https://www.instagram.com/santiuguie360" target="_blank" rel="noopener noreferrer"><div class="b"><h4>Redes</h4><p>@santiuguie360</p><span class="go">Abrir Instagram</span></div></a>
+</div>
+</div></section>
+</main>
+<footer>© 2026 Santiuguie’s · La mejor experiencia de tu vida</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
